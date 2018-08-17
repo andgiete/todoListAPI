@@ -1,0 +1,26 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "RESTful todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andgiete/todoListAPI.git"
+  },
+  "author": "andgiete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andgiete/todoListAPI/issues"
+  },
+  "homepage": "https://github.com/andgiete/todoListAPI#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,35 @@
+{
+"settings": {
+   "index": {
+         "number_of_shards": 1,
+         "number_of_replicas": 1
+   },
+   "analysis": {
+     "analyzer": {
+       "analyzer-name": {
+             "type": "custom",
+             "tokenizer": "keyword",
+             "filter": "lowercase"
+       }
+     }
+   },
+   "mappings": {
+     "todolist": {
+       "properties": {
+         "title": {
+               "type": "string"
+         },
+         "description": {
+               "type": "string"
+         },
+         "date_created": {
+               "type": "date"
+         },
+         "date_due": {
+               "type": "date"
+         }
+       }
+     }
+   }
+ }
+}
