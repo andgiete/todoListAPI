@@ -7,7 +7,10 @@ var TaskSchema = new Schema({
     type: String,
     required: 'Task Name: '
   },
-  Created_date:{
+  username:{
+    type: String
+  },
+  created_date:{
     type: Date,
     default: Date.now
   },
@@ -20,4 +23,18 @@ var TaskSchema = new Schema({
   }
 });
 
+var UserSchema = new Schema({
+  username:{
+    type: String
+  },
+  password:{
+    type: String
+  },
+  privilege:{
+    type: String,
+    enum: ['admin','guest']
+  }
+});
+
 module.exports = mongoose.model('Tasks',TaskSchema);
+module.exports = mongoose.model('Users',UserSchema);

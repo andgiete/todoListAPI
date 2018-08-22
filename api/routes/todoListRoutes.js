@@ -15,4 +15,7 @@ module.exports = function(app){
 
   app.route('/authentication')
     .post(todoList.authenticate);
+
+  app.route('/register')
+    .post(todoList.register);
 };
